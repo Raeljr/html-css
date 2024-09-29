@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            width: 500px;
+            border-collapse: collapse;
+            position: relative;
+        }
+
+        td, th {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
+
+        thead, tfoot {
+            background-color: gray;
+            color: white;
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: gray;
+        }
+
+        tbody tr:nth-child(odd) { /* 2n-1 */
+            background-color: white;
+        }
+
+        tbody tr:nth-child(even) { /* 2n */
+            background-color: lightgray;
+        }
+
+        td.num {
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <h1>Uso de tabelas grandes</h1>
+    <!--
+        ANATOMIA PARA TABELAS GRANDES
+        TABLE
+            CAPTION
+            TREAD
+                TR, TD, TH
+            TBODY
+                TR, TD, TH
+            TFOOT
+                TR, TD, TH
+    -->
+    <table>
+        <caption>População de todas as regiões do Brasil</caption>
+        <thead>
+            <tr>
+                <th scope="col">Região</th>
+                <th scope="col" style="width: 50px;">População</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Sudeste</td>
+                <td class="num">84.847.187</td>
+            </tr>
+            <tr>
+                <td>Nordeste</td>
+                <td class="num">54.644.582</td>
+            </tr>
+            <tr>
+                <td>Sul</td>
+                <td class="num">29.933.315</td>
+            </tr>
+            <tr>
+                <td>Norte</td>
+                <td class="num">17.349.619</td>
+            </tr>
+            <tr>
+                <td>Centro-Oeste</td>
+                <td class="num">16.287.809</td>
+            </tr>
+         </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row">Total de habitantes</th>
+                <td class="num"><strong>203.062.512</strong></td>
+            </tr>
+        </tfoot>
+    </table>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed, expedita iusto eligendi saepe, est architecto inventore ea dignissimos ducimus incidunt quisquam, quidem unde quasi dolore reiciendis voluptatibus magni quibusdam. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos, doloremque? Reiciendis vel modi quas repellat qui inventore, consequatur necessitatibus, dolor dolores ea beatae magnam facere hic delectus veritatis! Assumenda, consequuntur. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum ipsa beatae repellendus unde asperiores magni ratione alias, odit ad, dignissimos tempora eius impedit quasi nulla officia cum delectus nemo mollitia.</p> 
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed, expedita iusto eligendi saepe, est architecto inventore ea dignissimos ducimus incidunt quisquam, quidem unde quasi dolore reiciendis voluptatibus magni quibusdam. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos, doloremque? Reiciendis vel modi quas repellat qui inventore, consequatur necessitatibus, dolor dolores ea beatae magnam facere hic delectus veritatis! Assumenda, consequuntur. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum ipsa beatae repellendus unde asperiores magni ratione alias, odit ad, dignissimos tempora eius impedit quasi nulla officia cum delectus nemo mollitia.</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed, expedita iusto eligendi saepe, est architecto inventore ea dignissimos ducimus incidunt quisquam, quidem unde quasi dolore reiciendis voluptatibus magni quibusdam. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos, doloremque? Reiciendis vel modi quas repellat qui inventore, consequatur necessitatibus, dolor dolores ea beatae magnam facere hic delectus veritatis! Assumenda, consequuntur. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum ipsa beatae repellendus unde asperiores magni ratione alias, odit ad, dignissimos tempora eius impedit quasi nulla officia cum delectus nemo mollitia.</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed, expedita iusto eligendi saepe, est architecto inventore ea dignissimos ducimus incidunt quisquam, quidem unde quasi dolore reiciendis voluptatibus magni quibusdam. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos, doloremque? Reiciendis vel modi quas repellat qui inventore, consequatur necessitatibus, dolor dolores ea beatae magnam facere hic delectus veritatis! Assumenda, consequuntur. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum ipsa beatae repellendus unde asperiores magni ratione alias, odit ad, dignissimos tempora eius impedit quasi nulla officia cum delectus nemo mollitia.</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed, expedita iusto eligendi saepe, est architecto inventore ea dignissimos ducimus incidunt quisquam, quidem unde quasi dolore reiciendis voluptatibus magni quibusdam. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos, doloremque? Reiciendis vel modi quas repellat qui inventore, consequatur necessitatibus, dolor dolores ea beatae magnam facere hic delectus veritatis! Assumenda, consequuntur. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum ipsa beatae repellendus unde asperiores magni ratione alias, odit ad, dignissimos tempora eius impedit quasi nulla officia cum delectus nemo mollitia.</p>
+</body>
+</html>
